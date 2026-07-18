@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — Hard Hat Solutions, LLC</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%231C1E22'/%3E%3Cellipse cx='24' cy='31' rx='19' ry='4' fill='%23D69600'/%3E%3Cpath d='M8 31c0-13 8-20 16-20s16 7 16 20c0 1.5-2 1.5-2 0 0-11-7-16-14-16S10 19.5 10 31c0 1.5-2 1.5-2 0Z' fill='%23FFC61A'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
 <meta name="description" content="Safety, compliance, and project management support for construction companies who need it done right without a full-time hire.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -101,11 +101,7 @@
 
   /* placard card in hero */
   .hero-graphic{ display:flex; justify-content:center; margin-bottom:22px; }
-  .hero-graphic svg{ width:160px; height:auto; }
-  .hero-graphic .band{ fill: var(--charcoal); }
-  .hero-graphic .shell{ fill: var(--hh-yellow); }
-  .hero-graphic .shell-shade{ fill: var(--hh-yellow-deep); }
-  .hero-graphic .rivet{ fill: var(--charcoal); opacity:0.35; }
+  .hero-graphic img{ width:220px; height:auto; display:block; }
 
   .placard{
     background:var(--paper); color:var(--charcoal); border-radius:4px;
@@ -209,6 +205,7 @@
 
   /* About / who it's for */
   .about{ background:var(--charcoal-2); color:var(--paper); }
+  .about-single{ max-width:720px; margin:0 auto; }
   .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
   .about h2{ font-size:2rem; margin:0 0 18px; }
   .about p{ color:var(--concrete-light); font-size:1.02rem; }
@@ -294,18 +291,7 @@
 <header>
   <div class="nav">
     <a href="index.html" style="text-decoration:none; color:inherit;"><div class="brand"><span class="mark">
-      <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="navDomeGrad" x1="0.1" y1="0" x2="0.9" y2="1">
-            <stop offset="0" stop-color="#FFE180"/>
-            <stop offset="0.5" stop-color="#FFC61A"/>
-            <stop offset="1" stop-color="#D69600"/>
-          </linearGradient>
-        </defs>
-        <ellipse cx="100" cy="123" rx="92" ry="16" fill="#D69600"/>
-        <path d="M20 124 C20 58 62 16 100 16 C138 16 180 58 180 124 C180 130 172 130 172 124 C172 66 138 24 100 24 C62 24 28 66 28 124 C28 130 20 130 20 124 Z" fill="url(#navDomeGrad)"/>
-        <ellipse cx="66" cy="52" rx="24" ry="16" fill="#FFFFFF" opacity="0.3" transform="rotate(-24 66 52)"/>
-      </svg>
+      <img src="hardhat-icon.png" alt="Hard Hat Solutions logo" width="26" height="26" style="display:block; border-radius:2px;">
     </span> HARD HAT SOLUTIONS</div></a>
     <nav><ul>
       <li><a href="services.html" class="active-nav">Services</a></li>
